@@ -2,6 +2,8 @@
 
 A library that tries to understand the Might and Magic 3 save game format.  And a set of utilities to perform common operations on the files.
 
+[![Build Status](https://travis-ci.org/mschoch/mm3save.svg?branch=v0.0.1)](https://travis-ci.org/mschoch/mm3save)
+
 ## Why?
 
 I wanted some nostalgic replay value from the role playing games of my youth, but without all the dungeon crawling grind at lower levels.
@@ -11,6 +13,8 @@ I wanted some nostalgic replay value from the role playing games of my youth, bu
 To me it's just playing a different game.  I get more enjoyment reverse engineering the file format than I do reloading my save game after being eaten by a pack of Moose Rat.
 
 ## Utility Programs
+
+Precompiled binaries can be found on [the releases page](https://github.com/mschoch/mm3save/releases).
 
 ### mm3print
 
