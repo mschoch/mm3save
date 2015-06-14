@@ -7,8 +7,8 @@ install:
 - go get -d -v ./...
 script:
 - go build -v ./...
-- cp cmd/mm3print cmd/mm3print.$GIMME_OS.$GIMME_ARCH
-- cp cmd/mm3update cmd/mm3update.$GIMME_OS.$GIMME_ARCH
+- cp cmd/mm3print/mm3print cmd/mm3print/mm3print.$GIMME_OS.$GIMME_ARCH
+- cp cmd/mm3update/mm3update cmd/mm3update/mm3update.$GIMME_OS.$GIMME_ARCH
 deploy:
   provider: releases
   api_key:
