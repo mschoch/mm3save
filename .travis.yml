@@ -6,8 +6,8 @@ env:
 install:
 - go get -d -v ./...
 script:
-- go build -v ./cmd/mm3print -o mm3print
-- go build -v ./cmd/mm3update -o mm3update
+- go build -v -o mm3print ./cmd/mm3print 
+- go build -v -o mm3update ./cmd/mm3update 
 - cp mm3print mm3print.$GIMME_OS.$GIMME_ARCH
 - cp mm3update mm3update.$GIMME_OS.$GIMME_ARCH
 - ls
