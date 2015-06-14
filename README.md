@@ -4,15 +4,13 @@ A library that tries to understand the Might and Magic 3 save game format.  And 
 
 ## Why?
 
-I wanted some nostaltic replay value from the role playing games of my youth, but without all the dungeon crawling grind at lower levels.
+I wanted some nostalgic replay value from the role playing games of my youth, but without all the dungeon crawling grind at lower levels.
 
 ### Wait, isn't that cheating?
 
 To me it's just playing a different game.  I get more enjoyment reverse engineering the file format than I do reloading my save game after being eaten by a pack of Moose Rat.
 
 ## Utility Programs
-
-There are 2 useful utility programs.
 
 ### mm3print
 
