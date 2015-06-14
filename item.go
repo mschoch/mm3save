@@ -31,30 +31,34 @@ func NewItem(str string) (*Item, error) {
 	rv := Item{}
 	fields := strings.Fields(str)
 	for _, f := range fields {
-		if strings.ToLower(f) == "of" {
+
+		lookup := strings.ToLower(f)
+		lookup = strings.Replace(lookup, "_", " ", -1)
+
+		if lookup == "of" {
 			continue
 		}
-		sub, ok := invItemSubstances[strings.ToLower(f)]
+		sub, ok := invItemSubstances[lookup]
 		if ok {
 			rv.Substance = sub
 			continue
 		}
-		typ, ok := invItemTypes[strings.ToLower(f)]
+		typ, ok := invItemTypes[lookup]
 		if ok {
 			rv.Type = typ
 			continue
 		}
-		elm, ok := invItemElementalProps[strings.ToLower(f)]
+		elm, ok := invItemElementalProps[lookup]
 		if ok {
 			rv.Elemental = elm
 			continue
 		}
-		attr, ok := invItemAttributeProps[strings.ToLower(f)]
+		attr, ok := invItemAttributeProps[lookup]
 		if ok {
 			rv.Attribute = attr
 			continue
 		}
-		sp, ok := invItemSpecialProps["of "+strings.ToLower(f)]
+		sp, ok := invItemSpecialProps["of "+lookup]
 		if ok {
 			rv.Special = sp
 			continue

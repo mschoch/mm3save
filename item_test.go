@@ -117,6 +117,17 @@ func TestParseItem(t *testing.T) {
 			},
 			err: UnknownItemErr,
 		},
+		{
+			in: "fiery obsidian dragon great_axe of arrows",
+			item: &Item{
+				Elemental: 2,
+				Substance: 22,
+				Attribute: 9,
+				Type:      29,
+				Special:   4,
+			},
+			err: nil,
+		},
 	}
 
 	for _, test := range tests {
