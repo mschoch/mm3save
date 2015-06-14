@@ -1,3 +1,4 @@
+# cross compile on travis
 language: go
 
 env:
