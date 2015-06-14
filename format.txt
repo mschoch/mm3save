@@ -1,0 +1,100 @@
+Random notes around the data strucutre zoomed in a on a single character.
+
+
+000007a1  53 69 72 20 43 61 6e 65  67 6d 00 00 00 00 00 00  |Sir Canegm......|
+
+
+000007b1  00 00 00 01 11 00 0d 00  0f 00 13 00 10 00 0e 00  |................|
+          ^           ^     ^      ^     ^     ^     ^
+          +-Gender    +-Mgt +-Int  +-Per +-End +-Spd +-Acy
+             ^
+             +-Race
+                ^
+                +-Alignment
+                   ^
+                   +-Class
+
+000007c1  10 00 00 01 00 01 00 00  00 00 00 00 01 00 00 00  |................|
+          ^        ^     ^         ^        ^Cartographer
+          +-Lck    +-Lvl +-Birthday+-Arms Master  ^Direction Sense
+                            ^         ^Astrology     ^Linguist
+                            +- Unnatural Aging Years    ^Merchant
+                               ^         ^Body Builder
+                               +- Thievery     ^Crusader
+
+000007d1  00 00 00 00 00 01 00 00  00 00 00 00 00 00 00 00  |................|
+          ^Mountaineer   ^Swimmer     ^Ravens Guild  ^Saved Fountain Head
+             ^Navigator     ^Tracker     ^Albatross Guild
+                ^Pathfinder    ^SecretDoors ^Falcon Guild
+                   ^Prayer Master  ^Danger Sense  ^Eagle Guild
+                      ^Prestidigitator         ^Buzzard Build
+                                                        ^BlessedByTheForces
+
+
+000007e1  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+          ^NumOrbsGivenToZealot    ^GreekBrothersVisited
+             ^NumOrbsGivenToMalefactor^GreywindReleased645
+                ^NumOrbsGivenToTumult    ^BlackwinReleased231
+                   ^Unknown???              ^NumSkullsGivenKranion
+                      ^NumGoodArtifacts        ^Icarus Resurrected
+                         ^NumEvilArtifacts        ^Freed Princess Trueberry
+                            ^NumNeutralArtifacts     ^Num Arena Wins
+                               ^NumShellsAthena          ^Num Pearsl To Pirate Queen
+
+000007f1  00 00 00 01 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+          ^Ultimate Adventurer
+             ^Unknown (counts as award)
+                ^Unknown (counts as award)
+
+
+00000801  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+
+
+00000811  00 00 00 00 00 00 00 00  00 00 01 00 00 01 03 02  |................|
+                                                  ^
+                                                  +item 1 equipped slot
+
+00000821  05 06 09 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+                                                     ^
+                                                     +item 18 equipped slot   
+
+00000831  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+
+
+00000841  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+                   ^  
+                   +item 1 elemental
+
+00000851  00 00 00 00 00 00 00 00  00 00 02 02 03 00 00 00  |................|
+                            ^                  ^
+                            +- item 1 substance+- item 7 substance
+
+
+00000861  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+                               ^      ^+- item 1 attribute modifier
+                               +- item 18 substance
+
+00000871  00 00 00 00 00 00 00 00  00 00 00 00 05 24 2a 2b  |.............$*+|
+                                               ^
+                                               +- item 1 base
+
+
+00000881  2e 30 2e 00 00 00 00 00  00 00 00 00 00 00 00 00  |.0..............|
+                ^                                 ^     ^-item 1 special
+                +- item 7 base                    +- item 18 base
+
+00000891  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+          
+
+000008a1  00 00 00 00 00 00 00 07  00 07 00 07 00 07 00 07  |................|
+          ^                    ^      ^     ^     ^
+          +- item 18 special   +-Fire +-Col +-Ele +-Poi ^+Eng
+
+000008b1  00 07 00 00 00 00 00 00  00 00 00 00 00 00 00 00  |................|
+             ^
+             +-Mag
+
+000008c1  00 00 00 01 00 08 00 02  00 e2 01 3a 04 00 00     |...........:...|
+                         ^     ^            ^
+                         +-HP  +-SP         +-Exp
+000008d0

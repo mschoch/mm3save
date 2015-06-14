@@ -1,0 +1,10 @@
+#*
+*.sublime-*
+*~
+.#*
+.project
+.settings
+.DS_Store
+/cmd/mm3print/mm3print
+/cmd/mm3scan/mm3scan
+/cmd/mm3update/mm3update
