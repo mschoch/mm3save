@@ -6,16 +6,17 @@ env:
 install:
 - go get -d -v ./...
 script:
-- go build -v ./...
-- cp cmd/mm3print/mm3print cmd/mm3print/mm3print.$GIMME_OS.$GIMME_ARCH
-- cp cmd/mm3update/mm3update cmd/mm3update/mm3update.$GIMME_OS.$GIMME_ARCH
+- go build -v ./cmd/mm3print
+- go build -v ./cmd/mm3update
+- cp mm3print mm3print.$GIMME_OS.$GIMME_ARCH
+- cp mm3update mm3update.$GIMME_OS.$GIMME_ARCH
 deploy:
   provider: releases
   api_key:
     secure: YGPkdtngi/G1NmVvjFHKMJ7FUpobrTmMQy+hZgy0Kevy5mo1NwzbdSergn3z4l5loOmXMakpyfh7Oit9jw7Mv+nNNLnjl7oYr1e+oIIDMboHSl7nJUmFZYBD1WamKw3bkKBaW8t2FoZ3KcvCEqdbPkayvYGm1mtdkJ26bdVuOGpWCE+R0CH4gNnQC5Y4+zNff2J9HQ4MZWkTiFfo4kuTsm5Ka84QIlyw/TAHDASquy0kahFU30pKO5pSAoHz5AYWx173qicBnNplR24sqckYHdGMErrUJCt8Yx5tIJboVfBriTWSsdzSMelEKxxfGdKo3ikO4cpYdFPy2HmXxyejN7CFF3rcpQLj4YTMN9f3q5oNsMsPhfO2TYEh+7S4etonXjSsmrUgvE7IBGJRBOzWQ0W7v59jU7xYfzJX8RFywEs0HAivJy1WeYx6rrP/PmcNCBOOtZKJtsThKBWdL6GFVLuBLJlyZsjX16rwENB0X4zYFOMJDAnMocN8qgojB/7Ee9uoGdD78EXHzELCdUbH+xhm3ZFgO27fNj469MdKu5X1f9GTgGbKB1bo1jdtumjv6fieoMrSebfkk3WL5ILRkRboYZ7nvb6K3lM6FDEnCmNwWKhS48jEZsPdpzjObV7QSKJWP3poVoqkFiREyMTb19f/5lWrV3aP7DiIiLFg+DQ=
   skip_cleanup: true
   file: 
-    - cmd/mm3print.$GIMME_OS.$GIMME_ARCH
-    - cmd/mm3update.$GIMME_OS.$GIMME_ARCH
+    - mm3print.$GIMME_OS.$GIMME_ARCH
+    - mm3update.$GIMME_OS.$GIMME_ARCH
   on:
     tags: true
