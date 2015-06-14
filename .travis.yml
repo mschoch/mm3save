@@ -10,6 +10,7 @@ script:
 - go build -v ./cmd/mm3update
 - cp mm3print mm3print.$GIMME_OS.$GIMME_ARCH
 - cp mm3update mm3update.$GIMME_OS.$GIMME_ARCH
+- ls
 deploy:
   provider: releases
   api_key:
